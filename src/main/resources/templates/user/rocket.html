@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rocket</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+	integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link 
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+	rel="stylesheet" 
+	integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
+	crossorigin="anonymous">
+	
+<link rel="stylesheet" th:href="@{/styles/style.css}">
+	
+<style type="text/css">
+	.paint-card {
+		box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+	}
+</style>
+
+</head>
+
+<body>
+
+	<!-- Start nav bar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <div class="container-fluid">
+	    <a th:href="@{/}" class="navbar-brand"> YourHR </a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	        <li class="nav-item">
+	         
+	        </li>
+	      </ul> 
+	      <form class="d-flex" role="search">
+	        <h5 class="text-white pt-2"> Hello [[${user.name}]]! Welcome to YourHR </h5>
+	        <a th:href="@{/logout}" class="btn btn-light ms-3"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+	      </form>
+	    </div>
+	  </div>
+	</nav>
+	<!--  End nav bar -->
+	
+		<div class="container p-4">
+			<h3 class="text-center p-4">Software Developer Position at Rocker tech ltd</h3>
+
+			<div class="col-md-12 mt-3"> 
+				<div class="card paint-card">
+					<div class="card-body">
+						<div class="text-center">
+							<img alt="" src="../img/com1.jpeg" style="width: 100px; height: 100px;">
+						</div>
+
+						<h5>Software Developer</h5>
+						<p>Rocker tech ltd</p>
+						<p>
+							Location: Work From Home<br> <br> 
+							<span class="font-weight-bold">Upload Date :</span> 05.05.2023
+
+						</p>
+						<hr class="mt-5">
+						<p class="mt-4 pt-4"><b>About the job</b></p>
+						<p>Key responsibilities:</p>
+						<p>
+							1. Work on creating frontend applications using React <br>
+							2. Design backend infrastructure using Node, Java <br>
+							3. Manage big data processing jobs <br>
+							4. Build integrations with various systems <br>
+						</p>
+							
+						<p class="mt-4 pt-4"><b>Skill(s) required</b></p>
+							Node.js <br>
+							ReactJS <br>
+													
+						<div class="text-center pt-4">
+							<a th:href="@{'/user/success'}" class="btn btn-primary btn-sm">Apply</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="card rounded-0 text-center bg-dark text-white pt-2 p-4">
+		  <div class="card-body">
+		    <blockquote class="blockquote mb-0">
+		      <p>For further details and queries, Mail us at yourhr@gmail.com</p>
+		      <footer class="blockquote-footer">All rights reserved © 2023 YourHR.</footer>
+		    </blockquote>
+		  </div>
+		</div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 
+		crossorigin="anonymous"></script>
+	
+</body>
+</html>
